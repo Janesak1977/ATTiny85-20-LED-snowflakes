@@ -14,19 +14,19 @@ Animation operates while powered on.
 ATtiny85 pin assignments 
 ------------------------
 (legs numbered 1..8 counterclockwise from leg marked with dot)
- Leg  Function
- 1    Reset, no connection
- 2    D3 GREEN channel
- 3    D4 ORANGE channel
- 4    GND
- 5    D0 WHITE channel
- 6    D1 BLUE channel
- 7    D2 YELLOW channel
- 8    +5V
+
+1. Reset, no connection
+2. D3 GREEN channel
+3. D4 ORANGE channel
+4. GND
+5. D0 WHITE channel
+6. D1 BLUE channel
+7. D2 YELLOW channel
+8. +5V
 
 Code
 ----
-Written using the Arduino IDE and Arduino-Tiny cores , the target to select is the ATtiny85 @ 8MHz (internal oscillator, BOD disabled).  Look up how to program the ATtiny using Arduino, and programming it using Arduino as an IDE.  
+Written using the Arduino IDE and Arduino-Tiny cores (http://code.google.com/p/arduino-tiny/); the target to select is the ATtiny85 @ 8MHz (internal oscillator, BOD disabled).  Look up how to program the ATtiny using Arduino, and programming it using Arduino as an IDE.  
 
 Tested installation
 -------------------
@@ -37,11 +37,12 @@ I started the breadboard with a row of 20 LEDs, each with the flat side to the r
 So the green group has green to the anodes, then the cathodes in left to right sequence are orange, white, blue & yellow.  The orange group has orange to the anodes, with green, white, blue & yellow to the cathodes left to right.  White group's cathodes are sequenced green, orange, blue & yellow; the blue group's cathodes go green, orange, white & yellow; and the yellow group's cathodes go green, orange, white & blue.
 
 BoM as tested:
+
 	1x ATtiny85-20PU
-	1x 8 pin DIP IC Socket (optional, you might be confident soldering direct to the ATtiny to reduce weight)
 	20x 5mm blue LED
 	5x 100 Ohm resistors (current limiting, for LEDs)
 	1x 0.1uF ceramic capacitor (decoupling)
+	lots of interconnecting wire!
 
 Be sure to choose current limiting resistors to suit the particular LED you select.
   
